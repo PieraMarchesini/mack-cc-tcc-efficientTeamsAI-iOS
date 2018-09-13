@@ -14,6 +14,7 @@
 		65174E48210009D0002AB6AD /* TCC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65174E46210009D0002AB6AD /* TCC.xcdatamodeld */; };
 		65174E4D210009D2002AB6AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65174E4B210009D2002AB6AD /* LaunchScreen.storyboard */; };
 		65174E58210009D2002AB6AD /* TCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65174E57210009D2002AB6AD /* TCCTests.swift */; };
+		65400D59214AC8B30050EB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65400D58214AC8B30050EB12 /* Assets.xcassets */; };
 		6591AF90214730E200803DA3 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591AF8F214730E200803DA3 /* Member.swift */; };
 		65E9FAEC21497D8A00D7AE6D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9FAEB21497D8A00D7AE6D /* ApiManager.swift */; };
 		E103392EC26D52BCA1B88569 /* Pods_TCCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BA4DD67523508D6D11C51B /* Pods_TCCTests.framework */; };
@@ -44,6 +45,7 @@
 		65174E53210009D2002AB6AD /* TCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65174E57210009D2002AB6AD /* TCCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCTests.swift; sourceTree = "<group>"; };
 		65174E59210009D2002AB6AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65400D58214AC8B30050EB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6591AF8F214730E200803DA3 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		65E9FAEB21497D8A00D7AE6D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		93BA4DD67523508D6D11C51B /* Pods_TCCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				65174E41210009D0002AB6AD /* ViewController.swift */,
 				65174E4E210009D2002AB6AD /* Info.plist */,
 				65174E46210009D0002AB6AD /* TCC.xcdatamodeld */,
+				65400D58214AC8B30050EB12 /* Assets.xcassets */,
 			);
 			path = TCC;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65174E4D210009D2002AB6AD /* LaunchScreen.storyboard in Resources */,
+				65400D59214AC8B30050EB12 /* Assets.xcassets in Resources */,
 				65174E45210009D0002AB6AD /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,7 +502,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q8A65W24Q;
 				INFOPLIST_FILE = TCC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.mack.TCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -514,7 +521,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q8A65W24Q;
 				INFOPLIST_FILE = TCC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.mack.TCC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -531,7 +541,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2GC29473U;
 				INFOPLIST_FILE = TCCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.mack.TCCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -549,7 +563,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2GC29473U;
 				INFOPLIST_FILE = TCCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.mack.TCCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
