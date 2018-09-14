@@ -22,12 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        let appId: String = SDKSettings.appId
-        if url.scheme != nil && url.scheme!.hasPrefix("fb\(appId)") && url.host ==  "authorize" {
-            return SDKApplicationDelegate.shared.application(app, open: url, options: options)
-        }
-        return false
+        return SDKApplicationDelegate.shared.application(app, open: url, options: options)
     }
+    
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+//        let appId: String = SDKSettings.appId
+//        if url.scheme != nil && url.scheme!.hasPrefix("fb\(appId)") && url.host ==  "authorize" {
+//            return SDKApplicationDelegate.shared.application(app, open: url, options: options)
+//        }
+//        return false
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
