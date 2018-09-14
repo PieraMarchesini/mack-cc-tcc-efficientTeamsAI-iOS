@@ -15,6 +15,7 @@
 		65174E4D210009D2002AB6AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65174E4B210009D2002AB6AD /* LaunchScreen.storyboard */; };
 		65174E58210009D2002AB6AD /* TCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65174E57210009D2002AB6AD /* TCCTests.swift */; };
 		65400D59214AC8B30050EB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65400D58214AC8B30050EB12 /* Assets.xcassets */; };
+		65400D5B214AD6A40050EB12 /* Member.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65400D5A214AD6A40050EB12 /* Member.storyboard */; };
 		6591AF90214730E200803DA3 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591AF8F214730E200803DA3 /* Member.swift */; };
 		65E9FAEC21497D8A00D7AE6D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9FAEB21497D8A00D7AE6D /* ApiManager.swift */; };
 		E103392EC26D52BCA1B88569 /* Pods_TCCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BA4DD67523508D6D11C51B /* Pods_TCCTests.framework */; };
@@ -46,6 +47,7 @@
 		65174E57210009D2002AB6AD /* TCCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCTests.swift; sourceTree = "<group>"; };
 		65174E59210009D2002AB6AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65400D58214AC8B30050EB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65400D5A214AD6A40050EB12 /* Member.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Member.storyboard; sourceTree = "<group>"; };
 		6591AF8F214730E200803DA3 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		65E9FAEB21497D8A00D7AE6D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		93BA4DD67523508D6D11C51B /* Pods_TCCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 			children = (
 				65174E4B210009D2002AB6AD /* LaunchScreen.storyboard */,
 				65174E43210009D0002AB6AD /* Login.storyboard */,
+				65400D5A214AD6A40050EB12 /* Member.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65400D5B214AD6A40050EB12 /* Member.storyboard in Resources */,
 				65174E4D210009D2002AB6AD /* LaunchScreen.storyboard in Resources */,
 				65400D59214AC8B30050EB12 /* Assets.xcassets in Resources */,
 				65174E45210009D0002AB6AD /* Login.storyboard in Resources */,
@@ -502,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q8A65W24Q;
 				INFOPLIST_FILE = TCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Q8A65W24Q;
 				INFOPLIST_FILE = TCC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
