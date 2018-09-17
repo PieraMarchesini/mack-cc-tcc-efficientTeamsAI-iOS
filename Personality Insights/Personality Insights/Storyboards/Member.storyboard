@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mwb-J6-BDt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Member View Controller-->
+        <scene sceneID="grF-wL-cPS">
+            <objects>
+                <viewController storyboardIdentifier="member" id="Mwb-J6-BDt" customClass="MemberViewController" customModule="Personality_Insights" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zg0-WK-9db">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotoPerfil" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-BO-96C">
+                                <rect key="frame" x="265" y="40" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="9b1-MT-isZ"/>
+                                    <constraint firstAttribute="height" constant="90" id="kTu-S3-nhd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, nome" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpd-yw-hRT">
+                                <rect key="frame" x="30" y="83" width="215" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui você verá a análise da sua personalidade de acordo com seu comportamento nas redes sociais." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihF-MC-6Tn">
+                                <rect key="frame" x="30" y="160" width="315" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3gf-BO-96C" firstAttribute="leading" secondItem="xpd-yw-hRT" secondAttribute="trailing" constant="20" id="FoO-Fc-hk7"/>
+                            <constraint firstItem="xpd-yw-hRT" firstAttribute="leading" secondItem="Jsq-AE-2J3" secondAttribute="leading" constant="30" id="dhy-Bh-MlD"/>
+                            <constraint firstItem="Jsq-AE-2J3" firstAttribute="trailing" secondItem="ihF-MC-6Tn" secondAttribute="trailing" constant="30" id="lxs-Eb-oo1"/>
+                            <constraint firstItem="Jsq-AE-2J3" firstAttribute="trailing" secondItem="3gf-BO-96C" secondAttribute="trailing" constant="20" id="qIR-Kc-7rl"/>
+                            <constraint firstItem="ihF-MC-6Tn" firstAttribute="top" secondItem="3gf-BO-96C" secondAttribute="bottom" constant="30" id="rOL-Re-6Ac"/>
+                            <constraint firstItem="xpd-yw-hRT" firstAttribute="centerY" secondItem="3gf-BO-96C" secondAttribute="centerY" constant="16" id="vbS-nl-F2E"/>
+                            <constraint firstItem="3gf-BO-96C" firstAttribute="top" secondItem="Jsq-AE-2J3" secondAttribute="top" constant="20" id="wqB-ao-3bJ"/>
+                            <constraint firstItem="ihF-MC-6Tn" firstAttribute="leading" secondItem="xpd-yw-hRT" secondAttribute="leading" id="zFk-S6-Rgr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jsq-AE-2J3"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="xpd-yw-hRT" id="Spt-Tk-UEh"/>
+                        <outlet property="profileImage" destination="3gf-BO-96C" id="q8T-h5-xal"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00w-ab-Q8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fotoPerfil" width="720" height="721"/>
+    </resources>
+</document>

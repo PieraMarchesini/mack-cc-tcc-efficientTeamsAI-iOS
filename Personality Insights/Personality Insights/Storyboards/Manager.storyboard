@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="byt-TN-0yF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Olá, gestor-->
+        <scene sceneID="VYw-I3-JVa">
+            <objects>
+                <viewController title="Olá, gestor" id="byt-TN-0yF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CfT-yq-cDb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui você verá todos as equipes eficientes formadas através da combinação de suas personalidades pela teoria de Belbin." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7u-HT-9bx">
+                                <rect key="frame" x="30" y="126" width="315" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antes de ver os grupos, é necessário escolher a quantidade de pessoas por grupo ideal para o projeto." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-Mw-weS">
+                                <rect key="frame" x="30" y="203.5" width="315" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantidade de pessoas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOP-M6-S7F">
+                                <rect key="frame" x="30" y="341" width="176" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, gestor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMg-ic-EHL">
+                                <rect key="frame" x="30" y="50" width="152" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35I-0B-1wo">
+                                <rect key="frame" x="57.5" y="557" width="260" height="50"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.33725490196078434" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="FdE-M4-xtw"/>
+                                    <constraint firstAttribute="height" constant="50" id="Liy-ed-WAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Confirmar">
+                                    <color key="titleColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Utz-Mw-weS" firstAttribute="leading" secondItem="B7u-HT-9bx" secondAttribute="leading" id="1Fp-jB-4nD"/>
+                            <constraint firstItem="mMg-ic-EHL" firstAttribute="leading" secondItem="B7u-HT-9bx" secondAttribute="leading" id="9er-Vx-Ea9"/>
+                            <constraint firstItem="35I-0B-1wo" firstAttribute="centerX" secondItem="CfT-yq-cDb" secondAttribute="centerX" id="A2s-CW-0fu"/>
+                            <constraint firstItem="Utz-Mw-weS" firstAttribute="top" secondItem="B7u-HT-9bx" secondAttribute="bottom" constant="20" id="DAx-f5-j40"/>
+                            <constraint firstItem="tOP-M6-S7F" firstAttribute="top" secondItem="Utz-Mw-weS" secondAttribute="bottom" constant="80" id="PDK-6n-CYE"/>
+                            <constraint firstItem="B7u-HT-9bx" firstAttribute="top" secondItem="mMg-ic-EHL" secondAttribute="bottom" constant="40" id="SIn-WJ-9K0"/>
+                            <constraint firstItem="B7u-HT-9bx" firstAttribute="leading" secondItem="78k-Ib-eDk" secondAttribute="leading" constant="30" id="Xg4-md-KDp"/>
+                            <constraint firstItem="mMg-ic-EHL" firstAttribute="top" secondItem="78k-Ib-eDk" secondAttribute="top" constant="30" id="cYO-y3-UVc"/>
+                            <constraint firstItem="tOP-M6-S7F" firstAttribute="leading" secondItem="Utz-Mw-weS" secondAttribute="leading" id="cjl-5H-79H"/>
+                            <constraint firstItem="78k-Ib-eDk" firstAttribute="trailing" secondItem="B7u-HT-9bx" secondAttribute="trailing" constant="30" id="n7a-Wv-9ZJ"/>
+                            <constraint firstItem="78k-Ib-eDk" firstAttribute="bottom" secondItem="35I-0B-1wo" secondAttribute="bottom" constant="60" id="qpU-Rs-Jfi"/>
+                            <constraint firstItem="Utz-Mw-weS" firstAttribute="trailing" secondItem="B7u-HT-9bx" secondAttribute="trailing" id="uaF-gp-TdI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="78k-Ib-eDk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Olá, gestor" id="wLv-tt-6ao"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A40-t9-AUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>
