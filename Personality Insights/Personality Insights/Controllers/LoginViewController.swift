@@ -81,8 +81,9 @@ class LoginViewController: UIViewController {
                 print(error)
             case .cancelled:
                 print("User cancelled login.")
-            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-                print("Logged in!")
+            case .success(let grantedPermissions):
+                //let grantedPermissions, let declinedPermissions, let accessToken
+                print("Logged in! \(grantedPermissions)")
                 let storyboard = UIStoryboard(name: "Member", bundle: nil)
                 if let vc = storyboard.instantiateViewController(withIdentifier: "member") as? MemberViewController {
                     self.present(vc, animated: true, completion: nil)

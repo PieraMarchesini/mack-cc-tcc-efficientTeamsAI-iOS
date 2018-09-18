@@ -20,32 +20,55 @@ class MemberViewController: UIViewController {
         self.profileImage.setRounded()
         connectFB()
     }
-
+    
     
     func connectFB() {
-        let connection = GraphRequestConnection()
-        connection.add(ProfileRequest()) { response, result in
+        //        let conne ction = GraphRequestConnection()
+        GraphRequest(graphPath: "me", parameters: ["fields":"first_name,picture"], accessToken: AccessToken.current, httpMethod: .GET, apiVersion: .defaultVersion).start { (connection, result) in
+            //            "id,interested_in,gender,birthday,email,age_range,name,picture.width(480).height(480)"
             switch result {
-            case .success(let res):
-                print("Custom Graph Request Succeeded: \(res)")
-//                print("My facebook id is \(response.dictionaryValue?["id"])")
-//                print("My name is \(response.dictionaryValue?["name"])")
-            case .failed(let error):
-                print("Custom Graph Request Failed: \(error)")
+            case .success(response: let res):
+                let r = res as GraphResponse
+                if let dic = r.dictionaryValue {
+                    let name = dic["first_name"] as! String
+                    self.nameLabel.text = "Olá, \(name)"
+                    if let a = dic["picture"] as? [String: Any], let b = a["data"] as? [String : Any] {
+                        print(b["url"])
+                    }
+                }
+                print(result)
+            case .failed(let err):
+                print(err)
             }
         }
-        connection.start()
+        //        GraphRequest(graphPath: "me", parameters: ["fields":"id,interested_in,gender,birthday,email,age_range,name,picture.width(480).height(480)"]).start({ (connection, result, error) -> Void in
+        //
+        //            print(result)
+        //        })
+        
+        //        connection.add(ProfileRequest()) { response, result in
+        //            switch result {
+        //            case .success(let res):
+        //
+        //                print("Custom Graph Request Succeeded: \(res)")
+        ////                print("My facebook id is \(response.dictionaryValue?["id"])")
+        ////                print("My name is \(response.dictionaryValue?["name"])")
+        //            case .failed(let error):
+        //                print("Custom Graph Request Failed: \(error)")
+        //            }
+        //        }
+        //        connection.start()
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
