@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		617AC38F8B158666381ADE5D /* Pods_Personality_Insights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07998E9DFFBE16F6D25A4781 /* Pods_Personality_Insights.framework */; };
+		659EB175215ACBFA008CA1DD /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EB174215ACBFA008CA1DD /* PostResponse.swift */; };
+		659EB177215BD2A9008CA1DD /* Emoji+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EB176215BD2A9008CA1DD /* Emoji+String.swift */; };
 		65B7C9A6214EFD6A00BF5537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7C9A5214EFD6A00BF5537 /* AppDelegate.swift */; };
 		65B7C9A8214EFD6A00BF5537 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B7C9A7214EFD6A00BF5537 /* LoginViewController.swift */; };
 		65B7C9AB214EFD6A00BF5537 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B7C9A9214EFD6A00BF5537 /* Login.storyboard */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		07998E9DFFBE16F6D25A4781 /* Pods_Personality_Insights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Personality_Insights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54946EF73D4B7FF03A3F6FCF /* Pods-Personality Insights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Personality Insights.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Personality Insights/Pods-Personality Insights.debug.xcconfig"; sourceTree = "<group>"; };
+		659EB174215ACBFA008CA1DD /* PostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		659EB176215BD2A9008CA1DD /* Emoji+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emoji+String.swift"; sourceTree = "<group>"; };
 		65B7C9A2214EFD6A00BF5537 /* Personality Insights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personality Insights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B7C9A5214EFD6A00BF5537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B7C9A7214EFD6A00BF5537 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		65B7C9BB214EFE7900BF5537 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				659EB174215ACBFA008CA1DD /* PostResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				65B7C9C7214FDDA300BF5537 /* Round+ImageView.swift */,
+				659EB176215BD2A9008CA1DD /* Emoji+String.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -282,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B7C9C8214FDDA300BF5537 /* Round+ImageView.swift in Sources */,
+				659EB175215ACBFA008CA1DD /* PostResponse.swift in Sources */,
 				65B7C9C5214FDC5100BF5537 /* MemberViewController.swift in Sources */,
+				659EB177215BD2A9008CA1DD /* Emoji+String.swift in Sources */,
 				65B7C9C1214F110800BF5537 /* ManagerViewController.swift in Sources */,
 				65B7C9A8214EFD6A00BF5537 /* LoginViewController.swift in Sources */,
 				65B7C9A6214EFD6A00BF5537 /* AppDelegate.swift in Sources */,
